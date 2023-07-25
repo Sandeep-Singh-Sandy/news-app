@@ -23,7 +23,7 @@ function News(props) {
     }
     useEffect(() => {
         fetchNews();
-    }, []);
+    });
     
     const fetchMoreData =  ()=>{
         const options = {

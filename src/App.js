@@ -6,8 +6,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
-console.log(process.env.REACT_APP_NEWS_API_KEY)
 function App() {
   return (
     <>
@@ -20,7 +18,7 @@ function App() {
         <Route exec path='/health' element={<News key="health" category="health" />}/>;
         <Route exec path='/science' element={<News key="science"  category="science" />}/>;
         <Route exec path='/sports' element={<News key="sports" category="sports" />}/>;
-        <Route exec path="/" element={<News key="general"  />}/>
+        <Route exec path="/" element={<News key="general"/>}/>
       </Routes>
     </Router>
     </>
